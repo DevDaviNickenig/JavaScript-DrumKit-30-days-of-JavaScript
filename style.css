@@ -1,0 +1,43 @@
+html {
+    font-size: 18px;
+    font-family: 'Young Serif', serif;
+    background: url('./background.jpg') bottom center;
+    background-size: cover;
+}
+
+.teclas {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;    
+}
+
+.tecla {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.3rem solid black;
+    color: #f9f9f9;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    padding: 1rem 0.3rem;
+    text-align: center;    
+    width: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+kbd {
+    display: block;
+    font-size: 2rem;
+    padding: .2rem;
+}
+
+div span {
+    color: #ffc600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
