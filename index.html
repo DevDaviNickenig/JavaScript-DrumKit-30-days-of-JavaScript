@@ -5,58 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <title>JavaScript Drum Kit - 30 days of JavaScript</title>
 </head>
 <body>
     <div class="teclas">
-        <div class="tecla">
+        <div data-key="65" class="tecla">
             <kbd >A</kbd>
-            <span>Clap</span>
+            <span class="som">Clap</span>
         </div>
-        <div class="tecla">
+        <div data-key="83" class="tecla">
             <kbd >S</kbd>
-            <span>Hit-Hat</span>
+            <span  class="som">Hit-Hat</span>
         </div>
-        <div class="tecla">
+        <div data-key="68" class="tecla">
             <kbd >D</kbd>
-            <span>Kick</span>
+            <span  class="som">Kick</span>
         </div>
-        <div class="tecla">
+        <div data-key="70" class="tecla">
             <kbd >F</kbd>
-            <span>OpenHat</span>
+            <span class="som">OpenHat</span>
         </div>
-        <div class="tecla">
+        <div data-key="71" class="tecla">
             <kbd >G</kbd>
-            <span>Boom</span>
+            <span  class="som">Boom</span>
         </div>
-        <div class="tecla">
+        <div data-key="72" class="tecla">
             <kbd>H</kbd>
-            <span>Ride</span>
+            <span class="som">Ride</span>
         </div>
-        <div class="tecla">
+        <div data-key="74" class="tecla">
             <kbd>J</kbd>
-            <span>Snare</span>
+            <span class="som">Snare</span>
         </div>
-        <div class="tecla">
+        <div data-key="75" class="tecla">
             <kbd >K</kbd>
-            <span>Tom</span>
+            <span class="som">Tom</span>
         </div>
-        <div class="tecla">
+        <div data-key="76" class="tecla">
             <kbd >L</kbd>
-            <span>Tink</span>
+            <span class="som">Tink</span>
         </div>
     </div>
 
     <div>
-        <audio src="sounds/clap.wav"></audio>
-        <audio src="sounds/hihat.wav"></audio>
-        <audio src="sounds/kick.wav"></audio>
-        <audio src="sounds/openhat.wav"></audio>
-        <audio src="sounds/boom.wav"></audio>
-        <audio src="sounds/ride.wav"></audio>
-        <audio src="sounds/snare.wav"></audio>
-        <audio src="sounds/tom.wav"></audio>
-        <audio src="sounds/tink.wav"></audio>
+        <audio data-key="65" src="sounds/clap.wav"></audio>
+        <audio data-key="83" src="sounds/hihat.wav"></audio>
+        <audio data-key="68" src="sounds/kick.wav"></audio>
+        <audio data-key="70" src="sounds/openhat.wav"></audio>
+        <audio data-key="71" src="sounds/boom.wav"></audio>
+        <audio data-key="72" src="sounds/ride.wav"></audio>
+        <audio data-key="74" src="sounds/snare.wav"></audio>
+        <audio data-key="75" src="sounds/tom.wav"></audio>
+        <audio data-key="76" src="sounds/tink.wav"></audio>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
